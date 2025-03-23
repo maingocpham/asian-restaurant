@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu - Asian Asian</title>
+    <style>
+        /* Same styles as the homepage */
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            align-items: center;  /* Vertically center the items */
+            background-color: #580808;
+            padding: 10px 20px;  /* Padding around the navbar */
+        }
+
+        /* Center the links (Home, Menu, Reservations) */
+        .nav-links {
+            display: flex;
+            justify-content: center;  /* Horizontally center the links */
+            flex-grow: 1;  /* Make the links container take up available space */
+        }
+
+        /* Style the links inside the nav bar */
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+        }
+
+        /* Dropdown container for the login button */
+        .dropdown {
+            position: absolute;
+            top: 17px;  
+            right: 17px; /* Adjust the distance from the right */
+        }
+
+        /* Style the dropdown button */
+        .dropbtn {
+            background-color: #af954c;
+            color: white;
+            padding: 14px 20px;
+            font-size: 1.2em;
+            border:none;
+            cursor: pointer;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 65px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown content when hovering */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the dropdown button color when hovering */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        /* Center heading */
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 1.5em;
+            width: 78.5%; /* Match width of the table */
+            margin-left: 10%; /* Center the section title */
+        }
+
+        /* Appetizers Section */
+        .appetizers-title {
+            background-color: #af954c;
+        }
+
+        /* Entrees Section */
+        .entrees-title {
+            background-color: #af954c;
+        }
+
+        /* Soups Section */
+        .soups-title {
+            background-color: #af954c;
+        }
+
+        /* Desserts Section */
+        .desserts-title {
+            background-color: #af954c;
+        }
+
+        /* Table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #580808;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="menu.php">Menu</a>
+    <a href="reservation.html">Reservations</a>
+    <div class="dropdown">
+        <button class="dropbtn">Login</button>
+        <div class="dropdown-content">
+            <a href="staff_login.php">Staff</a>
+            <a href="admin_login.php">Admin</a>
+        </div>
+    </div>
+</nav>
+
+<h1>Our Menu</h1>
+
+<!-- Appetizers Section -->
+<div class="section-title appetizers-title">Appetizers</div>
+<table>
+    <thead>
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Cuisine</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Edamame</td>
+            <td>$5.50</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Gyoza</td>
+            <td>$7.50</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Satay Chicken Skewers</td>
+            <td>$8.99</td>
+            <td>Thai</td>
+        </tr>
+        <tr>
+            <td>Pork Dumplings</td>
+            <td>$6.99</td>
+            <td>Chinese</td>
+        </tr>
+        <tr>
+            <td>Fresh Spring Rolls</td>
+            <td>$7.50</td>
+            <td>Vietnamese</td>
+        </tr>
+        <tr>
+            <td>Crab Rangoon</td>
+            <td>$6.99</td>
+            <td>Chinese</td>
+        </tr>
+        <tr>
+            <td>Vegetable Tempura</td>
+            <td>$9.99</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Shrimp Toast</td>
+            <td>$7.99</td>
+            <td>Chinese</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Entrees Section -->
+<div class="section-title entrees-title">Entrees</div>
+<table>
+    <thead>
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Cuisine</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Teriyaki Chicken</td>
+            <td>$14.99</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Beef Pho</td>
+            <td>$13.99</td>
+            <td>Vietnamese</td>
+        </tr>
+        <tr>
+            <td>Kung Pao Chicken</td>
+            <td>$12.99</td>
+            <td>Chinese</td>
+        </tr>
+        <tr>
+            <td>Massaman Curry</td>
+            <td>$14.99</td>
+            <td>Thai</td>
+        </tr>
+        <tr>
+            <td>Shrimp Fried Rice</td>
+            <td>$11.50</td>
+            <td>Chinese</td>
+        </tr>
+        <tr>
+            <td>General Tso's Chicken</td>
+            <td>$13.50</td>
+            <td>Chinese</td>
+        </tr>
+        <tr>
+            <td>Spicy Tuna Roll</td>
+            <td>$12.99</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Pad See Ew</td>
+            <td>$13.50</td>
+            <td>Thai</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Soups Section -->
+<div class="section-title soups-title">Soups</div>
+<table>
+    <thead>
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Cuisine</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Miso Soup</td>
+            <td>$3.99</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Tom Yum Soup</td>
+            <td>$8.99</td>
+            <td>Thai</td>
+        </tr>
+        <tr>
+            <td>Hot and Sour Soup</td>
+            <td>$6.99</td>
+            <td>Chinese</td>
+        </tr>
+        <tr>
+            <td>Egg Drop Soup</td>
+            <td>$5.50</td>
+            <td>Chinese</td>
+        </tr>
+        <tr>
+            <td>Seaweed Soup</td>
+            <td>$7.50</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Chicken Coconut Soup</td>
+            <td>$9.50</td>
+            <td>Thai</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Desserts Section -->
+<div class="section-title desserts-title">Desserts</div>
+<table>
+    <thead>
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Cuisine</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mango Sticky Rice</td>    
+            <td>$6.50</td>
+            <td>Thai</td>
+        </tr>
+        <tr>
+            <td>Fried Banana with Honey</td>
+            <td>$5.99</td>
+            <td>Thai</td>
+        </tr>
+        <tr>
+            <td>Sesame Balls</td>  
+            <td>$4.50</td>
+            <td>Chinese</td>
+        </tr>
+        <tr>
+            <td>Mochi Ice Cream</td> 
+            <td>$4.99</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Red Bean Pancake</td>
+            <td>$5.50</td>
+            <td>Chinese</td>
+        </tr>
+
+        <tr>
+            <td>Green Tea Cheesecake</td> 
+            <td>$6.50</td>
+            <td>Japanese</td>
+        </tr>
+
+        <tr>
+            <td>Taro Custard</td> 
+            <td>$5.99</td>
+            <td>Thai</td>
+        </tr>
+
+
+
+    </tbody>
+</table>

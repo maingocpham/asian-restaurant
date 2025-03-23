@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu - Asian Asian</title>
+    <style>
+        /* Same styles as the homepage */
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: #f4f4f4;
+        }
+        /* Navigation bar */
+        nav {
+            display: flex;
+            /* justify-content: space-between;   */
+            align-items: center;  /* Vertically center the items */
+            background-color: #580808;
+            padding: 10px 20px;  /* Padding around the navbar */
+        }
+
+        /* Center the links (Home, Menu, Reservations) */
+        .nav-links {
+            display: flex;
+            justify-content: center;  /* Horizontally center the links */
+            flex-grow: 1;  /* Make the links container take up available space */
+        }
+
+        /* Style the links inside the nav bar */
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+        }
+
+        /* Dropdown container for the login button */
+        .dropdown {
+            position: absolute;
+            top: 17px;  
+            right: 17px; /* Adjust the distance from the right */
+        }
+
+        /* Style the dropdown button */
+        .dropbtn {
+            background-color: #ae881f;
+            color: white;
+            padding: 14px 20px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 65px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            width: 50px; /* Adjust the width */
+            height: auto; /* Auto height based on content */
+            padding: 10px; /* Optional: add padding inside the dropdown */
+            border: 1px solid #ccc; /* Optional: border to define the dropdown */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Show the dropdown content when hovering */
+        .dropdown:hover .dropdown-content {
+            display: block;
+            width: 10px; /* Adjust the width */
+            height: auto; /* Auto height based on content */
+            padding: 10px; /* Optional: add padding inside the dropdown */
+            border: 1px solid #ccc; /* Optional: border to define the dropdown */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        /* Change the dropdown button color when hovering */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+	<nav>
+		<a href="home.html">Home</a>
+		<a href="menu.php">Menu</a>
+		<a href="reservation.html">Reservations</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Login</button>
+            <div class="dropdown-content">
+                <a href="staff_login.php">Staff</a>
+                <a href="admin_login.php">Admin</a>
+            </div>
+        </div>
+        
+	</nav>
+	<header>
+		<h1>Welcome to Asian Asian</h1>
+		<p>Your favorite place for authentic sushi and Asian cuisine</p>
+
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to <strong>Asian Asian</strong>, your go-to destination for the finest, authentic sushi and Asian cuisine. At <strong>Asian Asian</strong>, we believe that food is more than just a meal—it's an experience that brings people together. Our mission is to bring the rich, vibrant flavors of Asia to your plate, with a focus on freshness, quality, and tradition.</p>
+    
+            <h2>Our Story</h2>
+            <p>Founded by a group of passionate food lovers, <strong>Asian Asian</strong> was born out of a desire to share the time-honored culinary traditions of Asia with the world. From the freshest sushi rolls to the comforting bowls of ramen and stir-fried dishes, our chefs are dedicated to crafting dishes that honor the diverse flavors of the continent.</p>
+    
+            <h2>What Sets Us Apart?</h2>
+            <p>At <strong>Asian Asian</strong>, we go above and beyond to provide an exceptional dining experience. Our chefs use only the highest-quality ingredients, ensuring that each dish is bursting with flavor. Whether you're enjoying a delicate sushi roll, a spicy Szechuan dish, or a bowl of flavorful pho, every bite reflects our commitment to authenticity and excellence.</p>
+            <p>We source fresh, sustainable ingredients, and our sushi is prepared with the utmost care—using traditional techniques passed down through generations. Every dish we serve tells a story of Asian culinary culture, with each ingredient hand-picked for its quality and taste.</p>
+    
+            <h2>Our Menu</h2>
+            <p>Our menu celebrates the diverse flavors of Asia, offering a wide range of dishes to suit every palate. From expertly crafted sushi and sashimi to hot and cold appetizers, flavorful curries, and noodle dishes, you'll find something to delight your taste buds.</p>
+            <p>Whether you're a sushi connoisseur or someone looking to explore new flavors, <strong>Asian Asian</strong> is here to take you on a culinary journey through the heart of Asia.</p>
+    
+            <h2>Join Us!</h2>
+            <p>We invite you to visit <strong>Asian Asian</strong> for a taste of the authentic, mouthwatering dishes that have made us a favorite among sushi lovers and food enthusiasts. Whether you're dining with friends, family, or enjoying a quiet meal solo, we promise an unforgettable dining experience.</p>
+            <p>Thank you for choosing <strong>Asian Asian</strong>, where every dish is made with passion and served with a smile.</p>
+        </section>
+	</header>
+</body>
+</html>
